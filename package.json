@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-makezi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint and Prettier config",
   "main": "index.js",
   "repository": {
