@@ -3,12 +3,12 @@ module.exports = {
   plugins: ['prettier', 'react-hooks'],
   parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2020
   },
   env: {
     browser: true,
     node: true,
-    jest: true,
+    jest: true
   },
   rules: {
     /**
@@ -21,7 +21,7 @@ module.exports = {
       2,
       'ForInStatement',
       'LabeledStatement',
-      'WithStatement',
+      'WithStatement'
     ],
     'no-await-in-loop': 0,
     'no-return-assign': [2, 'except-parens'],
@@ -32,8 +32,8 @@ module.exports = {
       1,
       {
         ignoreRestSiblings: true,
-        argsIgnorePattern: 'res|next|^err',
-      },
+        argsIgnorePattern: 'res|next|^err'
+      }
     ],
     // Disallow unused expressions which have no effect
     'no-unused-expressions': [2, { allowTaggedTemplates: true }],
@@ -59,8 +59,8 @@ module.exports = {
       2,
       {
         hoist: 'all',
-        allow: ['resolve', 'reject', 'done', 'next', 'err', 'error'],
-      },
+        allow: ['resolve', 'reject', 'done', 'next', 'err', 'error']
+      }
     ],
     // Allow single quotes for template literals and character escaping
     quotes: [
@@ -68,8 +68,8 @@ module.exports = {
       'single',
       {
         avoidEscape: true,
-        allowTemplateLiterals: true,
-      },
+        allowTemplateLiterals: true
+      }
     ],
     /**
      * IMPORT
@@ -84,10 +84,10 @@ module.exports = {
           'internal',
           'parent',
           'sibling',
-          'index',
+          'index'
         ],
-        'newlines-between': 'always',
-      },
+        'newlines-between': 'always'
+      }
     ],
     // Ensure imports appear before other statements
     'import/first': 2,
@@ -102,7 +102,8 @@ module.exports = {
         singleQuote: true,
         printWidth: 80,
         endOfLine: 'auto',
-      },
+        trailingComma: 'none'
+      }
     ],
     /**
      * REACT
@@ -113,8 +114,8 @@ module.exports = {
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.js', '.jsx'],
-      },
+        extensions: ['.js', '.jsx']
+      }
     ],
     'react/react-in-jsx-scope': 0,
     // Allow JSX props spreading
@@ -125,12 +126,12 @@ module.exports = {
     'react/prop-types': 0,
     'react/boolean-prop-naming': [
       'error',
-      { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+' },
+      { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+' }
     ],
     // Prefer function declarations for named components
     'react/function-component-definition': [
       2,
-      { namedComponents: 'function-declaration' },
-    ],
-  },
+      { namedComponents: 'function-declaration' }
+    ]
+  }
 };
