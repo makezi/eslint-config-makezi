@@ -132,6 +132,11 @@ module.exports = {
     'react/function-component-definition': [
       2,
       { namedComponents: 'function-declaration' }
-    ]
+    ],
+    /**
+     * REACT HOOKS
+     */
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn'
   }
 };
