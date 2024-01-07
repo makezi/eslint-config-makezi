@@ -2,47 +2,38 @@
   "name": "eslint-config-makezi",
   "version": "1.0.3",
   "description": "ESLint and Prettier config",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "eslint",
+    "lint",
+    "config",
+    "eslint-config",
+    "prettier",
+    "react",
+    "next"
+  ],
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/makezi/eslint-config-makezi.git"
   },
-  "keywords": [
-    "javascript",
-    "eslint",
-    "lint",
-    "config",
-    "prettier",
-    "react"
-  ],
-  "author": "Marko Djordjevic <hello@markodjordjevic.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/makezi/eslint-config-makezi/issues"
   },
-  "homepage": "https://github.com/makezi/eslint-config-makezi#readme",
-  "peerDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.17.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1"
+  "publishConfig": {
+    "access": "public"
   },
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.17.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1"
+  "author": "Marko Djordjevic <hello@markodjordjevic.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/makezi/eslint-config-makezi#readme",
+  "dependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^1.11.3",
+    "eslint-plugin-tailwindcss": "^3.13.1"
   }
 }
